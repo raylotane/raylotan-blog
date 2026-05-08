@@ -1,14 +1,7 @@
-# AI 评估体系建设实战系列
 
-## 目录
+# v1 - 基础 Chat：打通 AI SDK 与 Langfuse 的第一次连接
 
-- [v1 - 基础 Chat：打通 AI SDK 与 Langfuse 的第一次连接](#v1---基础-chat打通-ai-sdk-与-langfuse-的第一次连接)
-
----
-
-## v1 - 基础 Chat：打通 AI SDK 与 Langfuse 的第一次连接
-
-### 背景
+## 背景
 
 做任何 AI 应用，第一步永远是：**让请求能正常跑起来，并且能看到请求的详细信息**。
 
@@ -20,7 +13,7 @@
 
 本篇文章（[v1.0.0](https://github.com/your-repo/ai-evaluation-apply-in-langfuse/releases/tag/v1.0.0)）来实现这三个目标。
 
-### 技术方案
+## 技术方案
 
 ```
 User Input → ai-sdk → DeepSeek API → Response
@@ -34,9 +27,9 @@ User Input → ai-sdk → DeepSeek API → Response
 - 可观测性：`@langfuse/otel` + OpenTelemetry
 - 模型：DeepSeek v4 Flash
 
-### 核心代码
+## 核心代码
 
-#### 1. 环境配置
+### 1. 环境配置
 
 ```bash
 # .env.local
@@ -46,7 +39,7 @@ LANGFUSE_PUBLIC_KEY=pk-lf-your-public-key
 LANGFUSE_BASE_URL=https://us.cloud.langfuse.com
 ```
 
-#### 2. OpenTelemetry + Langfuse 初始化
+### 2. OpenTelemetry + Langfuse 初始化
 
 **instrumentation.ts**
 
@@ -72,7 +65,7 @@ export const tracerProvider = new NodeTracerProvider({
 tracerProvider.register();
 ```
 
-#### 3. Langfuse Prompt 托管
+### 3. Langfuse Prompt 托管
 
 **setUpLangfuseClient.ts**
 
@@ -92,7 +85,7 @@ export const customerServicePrompt = prompt.compile({
 })
 ```
 
-#### 4. 对话入口
+### 4. 对话入口
 
 **index.ts**
 
@@ -161,33 +154,28 @@ console.log('🎯 AI 对话助手 (输入 q 退出)\n');
 chat();
 ```
 
-### 启动方式
+## 启动方式
 
 ```bash
 bun install
 bun dev
 ```
 
-### 运行效果
+## 运行效果
 
 ```
-Session ID: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+Session ID:df7a8875-efea-4ecc-8564-ebeb28bbf4df
 🎯 AI 对话助手 (输入 q 退出)
 
-💬 你：你好，我想咨询一下退款流程
+✔ 💬 你： 你是谁
 
 ⏳ 思考中...
 
-🤖 AI： 您好 Alice！我是您的客服助手，很高兴为您服务。关于退款流程，请提供订单号，我帮您查询具体信息...
-
-💬 你：订单号是 12345
-
-⏳ 思考中...
-
-🤖 AI： 您的订单 12345 已发货，退款申请需要先拦截快递，点击这里申请拦截...
+🤖 AI： 您好！我是您的咖啡品牌智能助手，名字叫Alice。有什么可以帮助您的吗？☕️ 
 ```
+![langfuse-session-case](./images/langfuse-session-case.png)
 
-### Langfuse Dashboard 能看到什么
+## Langfuse Dashboard 能看到什么
 
 | 维度 | 内容 |
 |------|------|
@@ -196,7 +184,7 @@ Session ID: a1b2c3d4-e5f6-7890-abcd-ef1234567890
 | **Prompts** | 托管的 Prompt 模板，支持版本管理 |
 | **Generations** | 每次生成的 token 消耗、模型版本 |
 
-### 本章小结
+## 本章小结
 
 v1 完成了最基础但最重要的三件事：
 
