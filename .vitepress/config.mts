@@ -10,6 +10,7 @@ export default defineConfig({
       { text: 'Inbox', link: '/00_Inbox' },
       {
         text: 'AI', items: [
+          { text: 'AI 评估系列', link: '/01_AI/ai-evaluation-series/blog-v1-basic-chat.md' },
           { text: 'Learn Claude Code', link: '/01_AI/learn-claude-code/Mini-Agent-Loop' },
         ]
       },
