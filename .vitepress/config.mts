@@ -10,7 +10,7 @@ export default defineConfig({
       { text: 'Inbox', link: '/00_Inbox' },
       {
         text: 'AI', items: [
-          { text: 'Learn Claude Code', link: '/01_AI/Mini-Agent-Loop' },
+          { text: 'Learn Claude Code', link: '/01_AI/learn-claude-code/Mini-Agent-Loop' },
         ]
       },
     ],
@@ -32,13 +32,22 @@ export default defineConfig({
           ]
         },
         {
+          text: 'AI 评估系列',
+          items: [
+            { text: 'v1-基础 Chat：打通 AI SDK 与 Langfuse 的第一次连接', link: '/01_AI/ai-evaluation-series/blog-v1-basic-chat.md' },
+            // { text: 'Agent for Plan mode', link: '/01_AI/learn-claude-code/Agent-for-Plan-mode' },
+            // { text: 'Sub Agent Mode', link: '/01_AI/learn-claude-code/SubAgent-Mode' },
+          ]
+        },
+        {
           text: 'Learn Claude Code',
           items: [
-            { text: 'Mini Agent Loop', link: '/01_AI/Mini-Agent-Loop' },
-            { text: 'Agent for Plan mode', link: '/01_AI/Agent-for-Plan-mode' },
-            { text: 'Sub Agent Mode', link: '/01_AI/SubAgent-Mode' },
+            { text: 'Mini Agent Loop', link: '/01_AI/learn-claude-code/Mini-Agent-Loop' },
+            { text: 'Agent for Plan mode', link: '/01_AI/learn-claude-code/Agent-for-Plan-mode' },
+            { text: 'Sub Agent Mode', link: '/01_AI/learn-claude-code/SubAgent-Mode' },
           ]
-        }
+        },
+
       ]
     },
     // sidebar: [
