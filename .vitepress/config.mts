@@ -35,8 +35,8 @@ export default defineConfig({
         {
           text: 'AI 评估系列',
           items: [
-            { text: 'v1-基础 Chat：打通 AI SDK 与 Langfuse 的第一次连接', link: '/01_AI/ai-evaluation-series/blog-v1-basic-chat.md' },
-            // { text: 'Agent for Plan mode', link: '/01_AI/learn-claude-code/Agent-for-Plan-mode' },
+            { text: 'v1-基础 Chat：打通 AI SDK 与 Langfuse 的第一次连接', link: '/01_AI/ai-evaluation-series/blog-v1-basic-chat' },
+            { text: 'v2-引入 RAG 与评估体系：让 AI 回答有据可依、有据可评', link: '/01_AI/ai-evaluation-series/blog-v2-rag-evaluation' },
             // { text: 'Sub Agent Mode', link: '/01_AI/learn-claude-code/SubAgent-Mode' },
           ]
         },
