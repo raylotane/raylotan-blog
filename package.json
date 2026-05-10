@@ -13,6 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.17"
+    "vitepress": "^2.0.0-alpha.15"
+  },
+  "dependencies": {
+    "@vitepress-plugin/mermaid": "^1.0.0"
   }
 }

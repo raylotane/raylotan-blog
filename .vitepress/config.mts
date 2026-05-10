@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import mermaidPlugin from '@vitepress-plugin/mermaid'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -81,5 +82,10 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/raylotane/raylotane-blog' }
     ]
   },
-  srcDir: 'src'
+  srcDir: 'src',
+  vite: {
+    plugins: [
+      mermaidPlugin(),
+    ],
+  },
 })
