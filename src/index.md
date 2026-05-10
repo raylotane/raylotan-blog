@@ -60,3 +60,65 @@ mindmap
       安全与数据处理
         数据脱敏、清洗与合规性处理
 :::
+
+<br/>
+
+:::mermaid
+mindmap
+  root(AI质量保障体系)
+    监测：模型到底在干嘛？
+      常见能力
+        Prompt/Response全量记录
+        Token使用量、延迟
+        Tool调用轨迹（特别是Agent）
+        用户反馈（like/dislike）
+        多轮对话链路追踪（trace）
+      典型工具
+        Langfuse
+        LangSmith
+    评估：回答好不好？
+      评估方式
+        人工评估（HumanEval）
+          标注好/不好、打分（1-5）
+          标记hallucination、是否合规
+          纠错文本
+        规则评估（Rule-based）
+          JSON是否合法
+          是否调用了正确tool
+          是否包含某些字段
+        LLM评估（LLM-as-a-Judge）
+          用另一个模型来打分
+      常用框架
+        Ragas
+        DeepEval
+        OpenAI Evals
+      主流策略
+        规则 + LLMJudge + 少量人工
+      评分类型
+        质量评分、准确率（0-1或1~5）
+        判断是否hallucination/合规（0/1）
+        分类标注（helpful/irrelevant）
+        纠错型反馈（纠错文本）
+    优化：怎么变好？
+      评估之后才是关键：怎么提升？
+      优化方法
+        Prompt优化（最直接）
+          few-shot
+          chain-of-thought
+          system prompt调整
+        Tool/Agent优化
+          tool schema设计
+          tool selection prompt
+          tool返回格式
+        微调（Fine-tuning）
+          RAG（检索增强）
+          SFT（监督微调）
+          DPO/RLHF
+        自动优化（进阶）
+          Prompt自动搜索（AutoPrompt）
+          Self-reflection
+          Multi-agent critique
+      优化原则
+        从上往下开始优化
+        成本逐渐上升，收益比逐渐减少
+:::
