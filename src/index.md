@@ -26,7 +26,7 @@ footer: |
 
 :::mermaid
 mindmap
-  root((AI知识体系大图))
+  root((AI工程应用体系))
     用户：学会与AI协作
       高效的AI使用者
       提示词工程
