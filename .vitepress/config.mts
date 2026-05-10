@@ -14,6 +14,12 @@ export default defineConfig({
           { text: 'Learn Claude Code', link: '/01_AI/learn-claude-code/Mini-Agent-Loop' },
         ]
       },
+      {
+        text: '工程化', items: [
+          { text: '基于 Rollup 的多页面构建', link: '/02_Engineering/building-react-mpa-with-morejs-cli.md.md' },
+          { text: '从零实现一个插件化 CLI 工具', link: '/02_Engineering/fewjs-plugin-architecture.md' },
+        ]
+      },
     ],
     sidebar: {
       '/00_Inbox/': [
@@ -50,6 +56,15 @@ export default defineConfig({
           ]
         },
 
+      ],
+      "/02_Engineering/": [
+        {
+          // text: '工程化',
+          items: [
+            { text: '基于 Rollup 的多页面构建', link: '/02_Engineering/building-react-mpa-with-morejs-cli.md.md' },
+            { text: '从零实现一个插件化 CLI 工具', link: '/02_Engineering/fewjs-plugin-architecture.md' },
+          ]
+        }
       ]
     },
     // sidebar: [
