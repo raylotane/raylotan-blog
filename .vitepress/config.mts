@@ -9,9 +9,9 @@ export default defineConfig({
     nav: [
       { text: 'Inbox', link: '/00_Inbox' },
       {
-        text: 'AI', items: [
-          { text: 'AI 评估系列', link: '/01_AI/ai-evaluation-series/blog-v1-basic-chat' },
-          { text: 'Learn Claude Code', link: '/01_AI/learn-claude-code/Mini-Agent-Loop' },
+        text: 'AI工程应用', items: [
+          { text: 'AI评估系列', link: '/01_AI_Engineering/ai-evaluation-series/blog-v1-basic-chat' },
+          { text: 'Learn Claude Code', link: '/01_AI_Engineering/learn-claude-code/Mini-Agent-Loop' },
         ]
       },
       {
@@ -31,28 +31,28 @@ export default defineConfig({
           ]
         }
       ],
-      '/01_AI/': [
+      '/01_AI_Engineering/': [
         {
           text: 'AI',
           items: [
-            { text: 'MCP 详解', link: '/01_AI/MCP-Detail' },
+            { text: 'MCP 详解', link: '/01_AI_Engineering/MCP-Detail' },
           ]
         },
         {
           text: 'AI 评估系列',
           items: [
-            { text: 'v1-基础 Chat：打通 AI SDK 与 Langfuse 的第一次连接', link: '/01_AI/ai-evaluation-series/blog-v1-basic-chat' },
-            { text: 'v2-引入 RAG 与评估体系：让 AI 回答有据可依、有据可评', link: '/01_AI/ai-evaluation-series/blog-v2-rag-evaluation' },
-            { text: 'v3-从 RAG 到 Agent：让 AI 学会"动手做事"', link: '/01_AI/ai-evaluation-series/blog-v3-agent-tools' },
+            { text: 'v1-基础 Chat：打通 AI SDK 与 Langfuse 的第一次连接', link: '/01_AI_Engineering/ai-evaluation-series/blog-v1-basic-chat' },
+            { text: 'v2-引入 RAG 与评估体系：让 AI 回答有据可依、有据可评', link: '/01_AI_Engineering/ai-evaluation-series/blog-v2-rag-evaluation' },
+            { text: 'v3-从 RAG 到 Agent：让 AI 学会"动手做事"', link: '/01_AI_Engineering/ai-evaluation-series/blog-v3-agent-tools' },
             // { text: 'Sub Agent Mode', link: '/01_AI/learn-claude-code/SubAgent-Mode' },
           ]
         },
         {
           text: 'Learn Claude Code',
           items: [
-            { text: 'Mini Agent Loop', link: '/01_AI/learn-claude-code/Mini-Agent-Loop' },
-            { text: 'Agent for Plan mode', link: '/01_AI/learn-claude-code/Agent-for-Plan-mode' },
-            { text: 'Sub Agent Mode', link: '/01_AI/learn-claude-code/SubAgent-Mode' },
+            { text: 'Mini Agent Loop', link: '/01_AI_Engineering/learn-claude-code/Mini-Agent-Loop' },
+            { text: 'Agent for Plan mode', link: '/01_AI_Engineering/learn-claude-code/Agent-for-Plan-mode' },
+            { text: 'Sub Agent Mode', link: '/01_AI_Engineering/learn-claude-code/SubAgent-Mode' },
           ]
         },
 

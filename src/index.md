@@ -8,17 +8,16 @@ hero:
   # tagline: My great project tagline
   actions:
     - theme: brand
-      text: 进行中
+      text: 开始探索
       link: /00_Inbox
-    - theme: alt
-      text: AI 篇章
-      link: /api-examples
+    # - theme: alt
+    #   text: AI 篇章
+    #   link: /api-examples
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+# features:
+#   - title: AI工程应用
+#     details: AI工程应用
+#     link: /01_AI_Engineering
+#   - title: 前端工程化
+#     details: 前端工程化
 ---
