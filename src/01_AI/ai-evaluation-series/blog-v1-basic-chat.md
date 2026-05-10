@@ -196,5 +196,5 @@ v1 完成了最基础但最重要的三件事：
 
 **下一步预告**：v2 将引入 **RAG 知识库**，让 AI 能基于文档回答问题，同时在 Langfuse 中追踪检索链路。
 
-> 项目地址：https://github.com/your-repo/ai-evaluation-apply-in-langfuse
-> 版本标签：[v1.0.0](https://github.com/your-repo/ai-evaluation-apply-in-langfuse/releases/tag/v1.0.0)
+> 项目地址：https://github.com/raylotane/ai-evaluation-apply-in-langfuse
+> 版本标签：[v1.0.0](https://github.com/raylotane/ai-evaluation-apply-in-langfuse/releases/tag/v1.0.0)
